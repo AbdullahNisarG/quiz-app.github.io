@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <title>Codedamn - Quiz Project</title>
+</head>
+
+<body>
+  <header>
+    <a id="leaderboard">View Highscores <i class="fas fa-hand-point-left fa-lg"></i>
+    </a>
+
+    <p>Time: <span id="time"></span></p>
+  </header>
+  <main>
+    <!-- ///////////// STARTING CARD \\\\\\\\\\\\\ -->
+    <div id="startCard" class="card">
+      <div class="card-header">
+        <h2>Coding Quiz Challange</h2>
+      </div>
+      <div class="card-body">
+        <p>Try to answer to following code-related within the time limit.</p>
+        <p>
+          Keep in mind that incorrect answers will penalize your score/time by
+          ten seconds!
+        </p>
+      </div>
+      <div class="card-footer">
+        <button class="btn">Start Quiz</button>
+      </div>
+    </div>
+
+    <!-- ///////////// QUESTION CARD \\\\\\\\\\\\\ -->
+    <div id="question" class="card" style="display: none">
+      <div class="card-header">
+        <h2></h2>
+      </div>
+      <div class="card-body">
+        <ul></ul>
+      </div>
+      <div class="card-footer">
+        <hr />
+        <span></span>
+      </div>
+    </div>
+
+    <!-- ///////////// ALL DONE CARD \\\\\\\\\\\\\ -->
+    <div id="allDoneCard" class="card" style="display: none">
+      <div class="card-header">
+        <h2>All done!</h2>
+      </div>
+      <div class="card-body">
+        <p></p>
+      </div>
+      <div class="card-footer">
+        Enter initals:
+        <input type="text" autocomplete="off" />
+        <button class="btn">Submit</button>
+      </div>
+    </div>
+
+    <!-- ///////////// LEADERBOARD CARD \\\\\\\\\\\\\ -->
+    <div id="leaderboardCard" class="card" style="display: none;">
+      <div class="card-header">
+        <h2>Highscores</h2>
+      </div>
+      <div class="card-body">
+        <ol>
+          Nothing here...
+        </ol>
+      </div>
+      <div class="card-footer">
+        <button class="btn">Go Back</button><button class="btn">Clear Highscores</button>
+      </div>
+    </div>
+  </main>
+  <script src="assets/script.js"></script>
+</body>
+
+</html>

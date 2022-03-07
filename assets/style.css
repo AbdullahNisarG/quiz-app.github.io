@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  background-color: #218380;
+  margin-bottom: 15vh;
+  user-select: none;
+}
+header > * {
+  margin: 10px 20px;
+}
+header > a {
+  cursor: pointer;
+}
+header > a:hover {
+  text-decoration: underline;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 90%;
+  min-width: 290px;
+  max-width: 800px;
+  min-height: 250px;
+  margin: auto;
+  padding: 1.5em;
+  border: 1px solid grey;
+  border-radius: 18px;
+  box-shadow: 6px 4px 6px 0px #958f8f8c;
+}
+.card > :first-child {
+  margin-bottom: 15px;
+}
+.card > :last-child {
+  margin-top: 10px;
+}
+.btn {
+  background-color: #218380;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+}
+button + button {
+  margin-left: 15px;
+}
+#startCard .card-body p:first-child {
+  margin-bottom: 16px;
+}
+
+#question .card-body ul {
+  list-style: none;
+}
+#question .card-body ul li {
+  background-color: #218380;
+  padding: 10px 20px;
+  margin: 10px 0px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+#question .card-footer hr {
+  width: 80px;
+}
+#allDoneCard .card-footer input {
+  height: 35px;
+  width: 80px;
+  outline: none;
+}
+#allDoneCard .card-footer input:focus {
+  border: 2px solid #218380;
+  border-radius: 3px;
+}
+#leaderboardCard {
+  width: 40%;
+  align-items: center;
+  padding: 30px;
+}
+#leaderboardCard li {
+  margin-bottom: 8px;
+}
